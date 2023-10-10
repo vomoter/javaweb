@@ -1,0 +1,31 @@
+#driver
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url
+    url: jdbc:mysql://localhost:3306/tlias
+    #sqlusename
+    username: root
+    #sqlpassword
+    password: mysql123
+
+  servlet:
+    multipart:
+      #upload  a file size:
+      max-file-size: 10MB
+      #uplaod request max file size:
+      max-request-size: 100MB
+#mybaits_log
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #mybaits_camel_case
+    map-underscore-to-camel-case: true
+
+#aliyun_info
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5tGNAL7WTuK8SQwj7irj
+    accessKeySecret: vsRKxJSqT3oWQLZayfNYcVRMA3vhFU
+    bucketName: lwl-javaweb
